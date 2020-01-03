@@ -1,0 +1,9 @@
+type Title {
+  id: Int
+  title: String
+}
+
+extend type Query {
+  allTitle: [Title]
+  title(id: Int!): Title
+}
